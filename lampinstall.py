@@ -63,7 +63,7 @@ def main():
     configLine("/etc/mysql/mysql.conf.d/mysqld.cnf", r"general_log_file = ", "general_log_file = /var/log/mysql/mysql.log")
     
     #Instalación de PHP
-    doCommand(""apt-get install -y php php-cli php-mysql php-gd php-xml php-mbstring php-curl libapache2-mod-php"")
+    doCommand("apt-get install -y php php-cli php-mysql php-gd php-xml php-mbstring php-curl libapache2-mod-php")
     
     
     #Configuración de PHP
@@ -83,5 +83,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
