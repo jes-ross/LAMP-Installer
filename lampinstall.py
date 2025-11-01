@@ -80,3 +80,7 @@ def main():
     doCommand("systemctl restart apache2")
 
     doCommand("systemctl restart mysql")
+
+if __name__ == "__main__":
+    main()
+
