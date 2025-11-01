@@ -67,9 +67,9 @@ def main():
     
     
     #Configuración de PHP
-    configLine("/etc/php/8.3/apache2/php.ini", r"display_errors = ", "display_errors = On")
-    configLine("/etc/php/8.3/apache2/php.ini", r"upload_max_filesize = ", "upload_max_filesize = 20M")
-    configLine("/etc/php/8.3/apache2/php.ini", r"memory_limit = ", "memory_limit = 256M")
+    configLine("/etc/php/8.1/apache2/php.ini", r"display_errors = ", "display_errors = On")
+    configLine("/etc/php/8.1/apache2/php.ini", r"upload_max_filesize = ", "upload_max_filesize = 20M")
+    configLine("/etc/php/8.1/apache2/php.ini", r"memory_limit = ", "memory_limit = 256M")
     
     #Prioridad de PHP
     configLine("/etc/apache2/mods-enabled/dir.conf", 
@@ -83,6 +83,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
