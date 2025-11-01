@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from difflib import get_close_matches
 import subprocess
 import sys
@@ -77,4 +78,5 @@ def main():
     
     #Reiniciar servicios
     doCommand("systemctl restart apache2")
+
     doCommand("systemctl restart mysql")
